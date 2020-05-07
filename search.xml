@@ -70,4 +70,21 @@
         <category>生活</category>
       </categories>
   </entry>
+  <entry>
+    <title>hexo next主题优化之设置主题,菜单,增加分类</title>
+    <url>/2020/05/07/youhua/</url>
+    <content><![CDATA[<h3 id="博客的主题Scheme"><a href="#博客的主题Scheme" class="headerlink" title="博客的主题Scheme"></a>博客的主题Scheme</h3><p>Scheme 的切换通过更改主题配置_config.yml文件，搜索 scheme 关键字，将你需用启用的 scheme 前面注释 # 去除即可。</p>
+<figure class="highlight vala"><table><tr><td class="code"><pre><code class="hljs vala"><span class="hljs-meta">#Schemes</span><br><span class="hljs-meta">#scheme: Muse</span><br><span class="hljs-meta">#scheme: Mist</span><br><span class="hljs-meta">#scheme: Pisces</span><br>scheme: Gemini<br></code></pre></td></tr></table></figure>
+<h3 id="设置你想要的菜单"><a href="#设置你想要的菜单" class="headerlink" title="设置你想要的菜单"></a>设置你想要的菜单</h3><p>也是在主题配置_config.yml文件里面</p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">menu:</span><br><span class="hljs-symbol">  home:</span> /<br>  <span class="hljs-meta">#about: /about/ || user</span><br>  <span class="hljs-meta">#tags: /tags/ || tags</span><br><span class="hljs-symbol">  categories:</span> <span class="hljs-meta-keyword">/categories/</span>|| th<br><span class="hljs-symbol">  archives:</span> /archives<br>  <span class="hljs-meta">#schedule: /schedule/ || calendar</span><br>  <span class="hljs-meta">#sitemap: /sitemap.xml || sitemap</span><br>  <span class="hljs-meta">#commonweal: /404/ || heartbeat</span><br></code></pre></td></tr></table></figure>
+<h3 id="为博客增加分类"><a href="#为博客增加分类" class="headerlink" title="为博客增加分类"></a>为博客增加分类</h3><p>执行以下命令<br><code>hexo new page categories</code><br>打开blog/source/categories/index.md,增加type: “categories”</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">categories</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020</span><span class="hljs-number">-05</span><span class="hljs-number">-05</span> <span class="hljs-number">22</span><span class="hljs-string">:45:12</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">"categories"</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<p>给文章添加“categories”属性<br>例如</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">博客新增加的功能</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020</span><span class="hljs-number">-05</span><span class="hljs-number">-06</span> <span class="hljs-number">14</span><span class="hljs-string">:36:37</span><br><span class="hljs-attr">categories:</span> <span class="hljs-string">hexo</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<p><img src="/2020/05/07/youhua/fenl.png" alt="fl"></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+  </entry>
 </search>
